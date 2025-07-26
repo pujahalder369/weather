@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
       console.log(data);
       degree.innerHTML = `${data.current.temp_c}° C`;
       feel.innerHTML = `Feels like ${data.current.feelslike_c}° C`;
-      const condition = data.current.condition.text.toUpperCase();
+      const condition = data.current.condition.text.toLowerCase();
       const iconURL = data.current.condition.icon;
       iconImage.src = iconURL;
 
