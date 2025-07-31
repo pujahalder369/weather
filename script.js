@@ -22,19 +22,19 @@ function weather() {
 
       switch (data.current.condition.text) {
         case "Partly Cloudy":
-          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/cloudy.svg' alt="weatherIcon" width="200"/>`;
+          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/cloudy.svg' alt="weatherIcon" >`;
           break;
         case "Mist":
-          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/snowy-1.svg' alt="weatherIcon" width="200"/>`;
+          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/snowy-1.svg' alt="weatherIcon"/>`;
           break;
         case "Sunny":
-          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/snowy-1.svg' alt="weatherIcon" width="200"/>`;
+          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/snowy-1.svg' alt="weatherIcon"/>`;
           break;
         case "Overcast ":
-          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/rainy-1.svg' alt="weatherIcon" width="200"/>`;
+          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/rainy-1.svg' alt="weatherIcon"/>`;
           break;
-          default:
-            iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/cloudy-day-3.svg' alt="weatherIcon" width="200"/>`;
+        default:
+          iconImage.innerHTML = `<img src='./amcharts_weather_icons_1.0.0/animated/cloudy-day-3.svg' alt="weatherIcon"/>`;
       }
     } catch (error) {
       (degree.innerHTML = "Please give a correct location"), error;
